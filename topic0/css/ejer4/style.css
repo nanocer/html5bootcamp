@@ -20,6 +20,7 @@ header{
 }
 
 aside{
+	background-color: none;
 	font-family:"Times New Roman";
 	display:inline-block;
 	float:right;
