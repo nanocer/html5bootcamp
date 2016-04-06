@@ -3,12 +3,12 @@ function showElement(){
 	alert("Page is loaded");
 }
 
-function getJoke(){
+function getResponse(){
 
-	$.get('http://api.icndb.com/jokes/random', function(responseText) {
+	$.get(document.getElementById("myUrl").value, function(responseText) {
 
-	document.getElementById("joke").innerHTML = responseText.value.joke;
-	document.getElementById("joke").style.display = "block";
+	document.getElementById("parameter").innerHTML = responseText.value.joke;
+	document.getElementById("parameter").style.display = "block";
     console.log(responseText.value);
 	});
     
