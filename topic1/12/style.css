@@ -1,0 +1,22 @@
+th {
+    background-color: #4CAF50;
+    color: white;
+
+}
+ tr:hover {background-color: yellow}
+
+td {
+    padding: 10px;
+    text-align: center;
+
+}
+table{
+	
+	width: 50%;
+	table-layout: fixed;
+
+}
+
+tr{
+	background-color: #FFFF99;
+}
