@@ -1,0 +1,15 @@
+div{
+	text-align: center;
+	float: center;
+	border-style: solid; 
+}
+
+#bar{
+	background: black;
+	color: white;
+}
+
+.social{
+	background: blue;
+	color: white;
+}

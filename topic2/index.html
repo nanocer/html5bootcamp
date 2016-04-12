@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<title>Movies</title>
+</head>
+<body onload="createMovie()">
+	<div id="mov1">
+		<h1 id="title1"></h1>
+		<h5 id="swcast"></h4>
+
+		<button id="playSW" value="Playing Star Wars">Play movie</button>
+		<button id="pauseSW" value="Pausing Star Wars">Pause movie</button>
+		<button id="resumeSW" value="Resuming Star Wars">Resume movie</button>
+		<button id="castSW" value="Showing cast" onclick="starwars.showCast();">Show cast</button><br>
+		<p>Like or share with a friend</p><input type="text" id="friend1"></input> 
+		<button id="share1" onclick="starwars.share()">Share</button>
+		<button id="like1" onclick="starwars.like()">Like</button><br>
+		<p class="social" id="desc1"></p>
+	</div>
+
+	<div id="mov2">
+		<h1 id="title2"></h1>
+		<h5 id="titcast"></h4>
+
+		<button id="playT" value="Playing Titanic">Play movie</button>
+		<button id="pauseT" value="Pausing Titanic">Pause movie</button>
+		<button id="resumeT" value="Resuming Titanic">Resume movie</button>
+		<button id="castSW" value="Showing cast" onclick="titanic.showCast();">Show cast</button><br>
+		<p>Like or share with a friend</p><input type="text" id="friend2"></input> 
+		<button id="share2" onclick="titanic.share()">Share</button>
+		<button id="like2" onclick="titanic.like()">Like</button><br>
+		<p class="social" id="desc2"></p>
+	</div>
+
+	<div id="bar">
+		<p id="demo"></p>
+	</div>
+
+	<button id="cancel" onclick="javascript:cancel()">Cancel</button>
+	
+
+</body>
+</html>
