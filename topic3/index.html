@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="myScript.js"></script>
+  </head>
+
+  <body>
+
+  	<div ng-app="myApp">
+    <div class="inbox" ng-controller="MoviesCtrl">
+        <ul>
+            <li ng-repeat="movie in movie.details">
+                <p>Title: {{ movie.title }}</p>
+                <button ng-click="">Details</button>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+  
+  
+  </body>
+
+</html>
