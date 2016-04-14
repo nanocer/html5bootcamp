@@ -33,6 +33,13 @@ myApp.controller('MoviesCtrl', ['$scope', function ($scope) {
 
     $scope.deleteMovie = function (index) {
         $scope.movie.details.splice(index, 1)
+        $scope.details = null
+        $scope.imagen = null
     };
+
+    $scope.detailsMovie = function (index){
+    	$scope.details = "Year: " +$scope.movie.details[index].year + " Duration: " + $scope.movie.details[index].duration
+    	$scope.imagen = $scope.movie.details[index].img 
+    }
 
 }]);
