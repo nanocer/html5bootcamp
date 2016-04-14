@@ -11,14 +11,20 @@
 
   	<div ng-app="myApp">
     <div class="inbox" ng-controller="MoviesCtrl">
+        <nav>
         <ul>
             <li ng-repeat="movie in movie.details">
                 <p>Title: {{ movie.title }}</p>
-                <button ng-click="">Details</button>
-                
-            </li>
+                <button ng-click="toggle = !toggle">Details</button>
+                <button ng-click="deleteMovie($index)">Delete</button>
+                <ul ng-show="toggle">
+                  <li>Year: {{ movie.year }}</li>
+                  <li>Duration: {{ movie.duration }}</li>
+                  
+              </ul>
+
         </ul>
-    </div>
+        </nav>
 </div>
   
   

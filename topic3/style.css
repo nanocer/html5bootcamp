@@ -1,8 +1,17 @@
 * {
     font:300 13px/1.4'Helvetica Neue', Helvetica, Arial;
+    
 }
 .inbox {
     padding:15px;
+}
+nav{
+	float: left;
+}
+aside{
+	clear: both;
+	float: left;
+	padding: 25px;
 }
 ul {
     list-style:none;
