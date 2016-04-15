@@ -22,11 +22,11 @@
       "img": "http://screenrant.com/wp-content/uploads/Halloween.jpg"
     },
     {
-      "id": 4,
-      "title": "Friday 13",
-      "year": "1990",
-      "duration": "120",
-      "img": "http://legionofleia.com/wp-content/uploads/2015/08/friday-the-13th.jpg"
+      "title": "The Godfather",
+      "year": 1972,
+      "duration": 180,
+      "img": "http://marioarvizu.com/wp-content/uploads/2015/06/el-padrino-poster.jpg",
+      "id": 5
     }
   ]
 }

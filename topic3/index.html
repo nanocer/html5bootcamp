@@ -22,22 +22,25 @@
                 <ul ng-show="toggle">
                   <li>Year: {{ movie.year }}</li>
                   <li>Duration: {{ movie.duration }}</li>
-                  </aside>
+            </aside>
                   <img id="movPort" width="300" height="200" ng-show="toggle" ng-src= "{{ movie.img }}"/>
-                    
                 </ul>
-
-                
-                </li>
-                
-
-
-        </ul>
-        </div>
-        
+                    
+        </ul> 
 
         </div>
-</div>
+        <form ng-submit="mov.enviar()" class="form">
+          <h1>Insert Movie</h3>
+          <input ng-model="mov.fdata.title" type="text" placeholder="Movie Title"></input><br>
+          <input ng-model="mov.fdata.year" type="text" placeholder="Year"></input><br>
+          <input ng-model="mov.fdata.duration" type="text" placeholder="Duration"></input><br>
+          <input ng-model="mov.fdata.img" type="text" placeholder="Img link"></input><br>
+          <input type="submit" value="Submit"></input>
+        </form>
+
+        </div>
+    </div>
+    </div>
   
   
   </body>
