@@ -5,9 +5,21 @@
 .inbox {
     padding:15px;
 }
-nav{
-	float: left;
+
+#movPort{
+    float: left;
 }
+
+#movTitle{
+    font-style: bold;
+    font-size: 20px;
+}
+
+.movies{
+    float: left;
+	text-align: center;
+}
+
 aside{
 	clear: both;
 	float: left;
