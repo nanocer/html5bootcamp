@@ -14,11 +14,12 @@
         <div class="movies">
         <ul>
         
-            <li ng-repeat="movie in mov.peliculas">
+            <li ng-repeat="movie in mov.peliculas" >
             <aside>
                 <p id="movTitle">{{ movie.title }}</p>
                 <button ng-click="toggle = !toggle">Details</button>
-                <button ng-click="deleteMovie($index)">Delete</button>
+                <button ng-click="deleteMovie(movie.id)">Delete</button>
+                <button ng-click="editMovie($index)">Edit</button>
                 <ul ng-show="toggle">
                   <li>Year: {{ movie.year }}</li>
                   <li>Duration: {{ movie.duration }}</li>
@@ -29,13 +30,13 @@
         </ul> 
 
         </div>
-        <form ng-submit="mov.enviar()" class="form">
-          <h1>Insert Movie</h3>
-          <input ng-model="mov.fdata.title" type="text" placeholder="Movie Title"></input><br>
-          <input ng-model="mov.fdata.year" type="text" placeholder="Year"></input><br>
-          <input ng-model="mov.fdata.duration" type="text" placeholder="Duration"></input><br>
-          <input ng-model="mov.fdata.img" type="text" placeholder="Img link"></input><br>
-          <input type="submit" value="Submit"></input>
+        <form id="movieForm" ng-submit="mov.add()" class="form">
+          <h1>{{action}}</h3>
+          <input required id="movT" ng-model="mov.fdata.title" type="text" placeholder="Movie Title"></input><br>
+          <input required id="movY" ng-model="mov.fdata.year" type="text" placeholder="Year"></input><br>
+          <input required id="movD" ng-model="mov.fdata.duration" type="text" placeholder="Duration"></input><br>
+          <input required id="movI" ng-model="mov.fdata.img" type="text" placeholder="Img link"></input><br>
+          <input type="submit" value="{{insert}}"></input><input type="reset" ng-click="mov.reset()" value="Cancel"></input>
         </form>
 
         </div>

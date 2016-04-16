@@ -1,11 +1,11 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Star Wars",
-      "year": "2015",
-      "duration": "120",
-      "img": "https://lh3.googleusercontent.com/-H1KqX5HicIU/AAAAAAAAAAI/AAAAAAABOuo/ENj4lcl2ekE/s0-c-k-no-ns/photo.jpg"
+      "title": "Star Wars VII",
+      "year": 2015,
+      "duration": 120,
+      "img": "https://lh3.googleusercontent.com/-H1KqX5HicIU/AAAAAAAAAAI/AAAAAAABOuo/ENj4lcl2ekE/s0-c-k-no-ns/photo.jpg",
+      "id": 1
     },
     {
       "id": 2,
