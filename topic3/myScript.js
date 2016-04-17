@@ -29,7 +29,7 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
                 document.getElementById("movY").value=""
                 document.getElementById("movI").value=""
                 document.getElementById("movD").value=""
-                });
+                })
                 
             });
          }
@@ -47,6 +47,7 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
 
          }
          mov.fdata={}
+         $scope.action="Insert Movie"
          $scope.insert="Insert"
          
     }
@@ -79,3 +80,4 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
     
 
 }]);
+

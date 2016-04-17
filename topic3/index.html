@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <h1>My movies</h1>
 
   	<div ng-app="myApp">
     <div class="inbox" ng-controller="MoviesCtrl as mov">
@@ -24,20 +25,27 @@
                   <li>Year: {{ movie.year }}</li>
                   <li>Duration: {{ movie.duration }}</li>
             </aside>
-                  <img id="movPort" width="300" height="200" ng-show="toggle" ng-src= "{{ movie.img }}"/>
+                <div id="movDetails">
+                  <img id="movPort" width="340" height="250" ng-show="toggle" ng-src= "{{ movie.img }}"/>
+                  </div>
                 </ul>
+                
+
                     
         </ul> 
 
+
         </div>
-        <form id="movieForm" ng-submit="mov.add()" class="form">
-          <h1>{{action}}</h3>
+        <div id="form">
+        <form id="movieForm" ng-submit="mov.add()" class="form-style-9">
+          <h2>{{action}}</h2>
           <input required id="movT" ng-model="mov.fdata.title" type="text" placeholder="Movie Title"></input><br>
           <input required id="movY" ng-model="mov.fdata.year" type="text" placeholder="Year"></input><br>
           <input required id="movD" ng-model="mov.fdata.duration" type="text" placeholder="Duration"></input><br>
           <input required id="movI" ng-model="mov.fdata.img" type="text" placeholder="Img link"></input><br>
           <input type="submit" value="{{insert}}"></input><input type="reset" ng-click="mov.reset()" value="Cancel"></input>
         </form>
+        <div
 
         </div>
     </div>
