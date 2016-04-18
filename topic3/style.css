@@ -9,6 +9,15 @@ body{
 #imgMov img{
     padding-left: 150px;
 }
+
+#movPort{
+    display: block;
+  max-width:450px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+  
+}
 h1 { color: #cc3300; 
     font-size: 48px; 
     font-family: 'Signika', sans-serif; 
@@ -24,9 +33,6 @@ h1 { color: #cc3300;
     float: left;
 }
 
-#movPort{
-    float: center;
-}
 
 .form{
     padding: 20px;

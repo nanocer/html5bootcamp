@@ -1,10 +1,10 @@
 {
   "movies": [
     {
-      "title": "Star Wars VI",
+      "img": "http://vignette1.wikia.nocookie.net/es.starwars/images/0/04/Star_Wars_Episode_VII_The_Force_Awakens.png/revision/latest?cb=20151018161842",
+      "title": "Star Wars VII",
       "year": 2015,
       "duration": 120,
-      "img": "http://vignette1.wikia.nocookie.net/es.starwars/images/0/04/Star_Wars_Episode_VII_The_Force_Awakens.png/revision/latest?cb=20151018161842",
       "id": 1
     },
     {

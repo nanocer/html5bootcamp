@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <h1>MY MOVIES</h1>
+    <h1>BLOCKBUSTER: A NEW HOPE</h1>
 
   	<div ng-app="myApp">
     <div class="inbox" ng-controller="MoviesCtrl as mov">
@@ -23,12 +23,12 @@
                 <button ng-click="deleteMovie(movie.id)">Delete</button>
                 <button ng-click="editMovie($index)">Edit</button>
                 <ul ng-show="toggle">
-                  <li>Year: {{ movie.year }}</li>
-                  <li>Duration: {{ movie.duration }}</li>
+                  <h2><li>Year: {{ movie.year }}</li></h2>
+                  <h2><li>Duration: {{ movie.duration }} <main></main></li></h2>
             </aside>
-                <div id="imgMov">
-                  <img id="movPort" width="340" height="250" ng-show="toggle" ng-src= "{{ movie.img }}"/>
-                  </div>
+                <div class="imgPort" id="imgMov">
+                  <img id="movPort" ng-show="toggle" ng-src= "{{ movie.img }}"/>
+                </div>
                 </ul>
                 
 
@@ -45,7 +45,7 @@
           <input required id="movD" ng-model="mov.fdata.duration" type="text" placeholder="Duration"></input><br>
           <input required id="movI" ng-model="mov.fdata.img" type="text" placeholder="Img link"></input><br><br>
           <div id="previewImg">
-            <img width="200" height"100" ng-src="{{mov.fdata.img}}"/>
+            <img alt="Movie Image" width="200" height"100" ng-src="{{mov.fdata.img}}"/>
           </div>
 
           <input class="myButton" type="submit" value="{{insert}}"></input>

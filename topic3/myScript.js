@@ -4,7 +4,6 @@ var myApp = angular.module('myApp', []);
 
 myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
     
-    
 
     var id;
     $scope.action="Insert Movie"
@@ -19,6 +18,7 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
         $scope.action="Insert Movie"
         $scope.insert="Insert"
         mov.fdata={}
+        mov.fdata.img="image_.png"
     }
 
     mov.fdata={};
@@ -51,9 +51,11 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
 
 
          }
+         document.getElementsByClassName('prevImg').display='none';
          mov.fdata={}
          $scope.action="Insert Movie"
          $scope.insert="Insert"
+         mov.fdata.img="image_.png";
          
     }
 
