@@ -1,25 +1,18 @@
 {
   "movies": [
     {
-      "title": "Star Wars VII",
+      "title": "Star Wars VI",
       "year": 2015,
       "duration": 120,
-      "img": "https://lh3.googleusercontent.com/-H1KqX5HicIU/AAAAAAAAAAI/AAAAAAABOuo/ENj4lcl2ekE/s0-c-k-no-ns/photo.jpg",
+      "img": "http://vignette1.wikia.nocookie.net/es.starwars/images/0/04/Star_Wars_Episode_VII_The_Force_Awakens.png/revision/latest?cb=20151018161842",
       "id": 1
     },
     {
-      "id": 2,
-      "title": "Titanic",
-      "year": "1997",
-      "duration": "120",
-      "img": "http://www.actitudfem.com/media/files/styles/gallerie_carousel/public/images/2015/04/titanicportada_0.jpg?itok=Nak3aC0A"
-    },
-    {
-      "id": 3,
-      "title": "Halloween",
-      "year": "1998",
-      "duration": "120",
-      "img": "http://screenrant.com/wp-content/uploads/Halloween.jpg"
+      "title": "Halloween 2",
+      "year": 1998,
+      "duration": 120,
+      "img": "http://screenrant.com/wp-content/uploads/Halloween.jpg",
+      "id": 3
     },
     {
       "title": "The Godfather",
@@ -27,6 +20,13 @@
       "duration": 180,
       "img": "http://marioarvizu.com/wp-content/uploads/2015/06/el-padrino-poster.jpg",
       "id": 5
+    },
+    {
+      "title": "Terminator",
+      "year": 1984,
+      "duration": 108,
+      "img": "http://pics.filmaffinity.com/Terminator-778052251-large.jpg",
+      "id": 6
     }
   ]
 }

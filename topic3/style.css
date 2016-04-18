@@ -6,8 +6,8 @@
 body{
     background:none;
 }
-img{
-    padding-left: 140px;
+#imgMov img{
+    padding-left: 150px;
 }
 h1 { color: #cc3300; 
     font-size: 48px; 
@@ -29,7 +29,7 @@ h1 { color: #cc3300;
 }
 
 .form{
-    padding: 15px;
+    padding: 20px;
     float: right;
 }
 
@@ -55,14 +55,14 @@ h1 { color: #cc3300;
 aside{
 	clear: both;
 	float: left;
-	padding: 25px;
+	padding: 10px;
 }
 ul {
     list-style:none;
 }
 ul li {
     text-align: center;
-    padding:5px;
+    padding:0px;
     overflow:hidden;
     background: none;
     border-top:2px solid #e5e5e5;
@@ -75,9 +75,9 @@ ul li:last-child {
 
 .form-style-9{
     float: right;
-    max-width: 450px;
+    max-width: 430px;
     background: #FAFAFA;
-    padding: 30px;
+    padding: 15px;
     margin: 50px auto;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
@@ -185,7 +185,6 @@ ul li:last-child {
 	position:relative;
 	top:1px;
 }
-
 
 
 

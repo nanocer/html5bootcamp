@@ -1,6 +1,11 @@
+
+
 var myApp = angular.module('myApp', []);
 
 myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
+    
+    
+
     var id;
     $scope.action="Insert Movie"
     $scope.insert="Insert"
@@ -8,6 +13,7 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('http://localhost:3000/movies').success(function(respuesta){
         mov.peliculas = respuesta;
     });
+
 
     mov.reset = function(){
         $scope.action="Insert Movie"
@@ -18,7 +24,6 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
     mov.fdata={};
 
     mov.add = function(){
-
         if($scope.insert=="Insert"){
             $http.post('http://localhost:3000/movies', mov.fdata)
              .success(function(res){
@@ -80,4 +85,7 @@ myApp.controller('MoviesCtrl', ['$scope', '$http', function ($scope, $http) {
     
 
 }]);
+
+
+
 
